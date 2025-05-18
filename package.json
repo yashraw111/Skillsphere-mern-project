@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client start",
+    "server": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
